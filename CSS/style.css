@@ -1,0 +1,170 @@
+:root{
+    --yellow:#f7f5f9;
+    --red:crimson;
+    --White:Whitesmoke;
+    --green:#53BF9D;
+    /*we can use this colors using this (--)name of entire code*/
+}
+
+
+body{
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+.landing{
+    background-image:url('/Media/pexels-pixabay-357737.jpg') ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white ;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    padding: 1em;
+
+
+}
+
+#Logo{
+    flex: 3;
+    font-size: 1.25em;
+    min-width: 260px;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    flex: 1;
+}
+
+nav a:hover{
+    color: var(--green);
+}
+
+.header h2,nav a i{
+    margin-right: .5em;
+}
+
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    padding: 2em;
+}
+
+.class1{
+    color: var(--red);
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.class2{
+    color: var(--yellow);
+}
+
+.maintext div{
+    margin-top: .75em;
+}
+
+.maintext button{
+    width: 20vw;
+    margin-top: 3em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--White);
+}
+
+.Menu{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background:linear-gradient(to right,rgb(100,100,100),rgb(30, 29, 29));
+    color: white;
+}
+
+#menuheading,#locheading{
+    background: linear-gradient(to right,rgb(100,100,100),rgb(30, 29, 29));
+    font-size: 2.5em;
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+}
+
+.Menu th{
+    color:var(--green);
+    font-size: 1.8em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.Menu tr{
+    display:flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+
+.Menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+
+.Menu td:nth-child(2){
+    justify-self: right;
+}
+
+.maincourse{
+    grid-row: span 2;
+}
+
+.locations{
+    background: linear-gradient(to right,rgb(100,100,100),rgb(30, 29, 29));
+    color:var(--White) ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locations h2{
+    color: var(--green);
+    margin-bottom: .8em;
+}
+
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+
+}
+
+.social-menu{
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    column-gap: 1em;
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f7f5f9;
+    transition: .5s;
+   /* box-shadow: 0 9px 9px rgb(0,0,0);*/
+}
+
+.social-menu  :hover{
+    transform: translate(0,-10);
+}
